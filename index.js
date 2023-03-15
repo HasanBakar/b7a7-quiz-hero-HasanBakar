@@ -23,8 +23,8 @@ startQuiz.addEventListener("click", () => {
 
   let x = setInterval(() => {
     if (counterNum < 0) {
-      countDown.classList.remove("flex");// variable countDown spelling mistake resolved
-      coutDown.classList.add("hidden");
+      countDown.classList.remove("flex"); // variable countDown spelling mistake resolved
+      countDown.classList.add("hidden"); // variable countDown spelling mistake resolved
       counterNum = 3;
       count = 0;
       timer = null;
