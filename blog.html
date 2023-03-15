@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blogs</title>
+</head>
+
+
+<body>
+    <h1 class="text-center my-8 text-5xl font-semibold">Welcome to Our <span class="text-pink-500">Blogs</span></h1>
+    <section class="container mx-auto">
+        <h2 class="text-3xl">Question <span class="text-pink-800">Answer</span> Section</h2>
+        <div>
+            <h3 class="text-2xl my-2 text-purple-600 font-medium">What are the differences among the method map, filter,
+                forEach, and find?</h3>
+            <div class="grid md:grid-cols-2 gap-5">
+                <div class="p-4 border-2 shadow-lg">
+                    <h4 class="text-xl font-semibold">map:</h4>
+                    <ol>
+                        <li>map() creates a new array from calling a function for every array element.</li>
+                        <li>map() calls a function once for each element in an array.</li>
+                        <li>map() does not execute the function for empty elements.</li>
+                        <li>map() does not change the original array.</li>
+                    </ol>
+                </div>
+                <div class="p-4 border-2 shadow-lg">
+                    <h4 class="text-xl font-semibold">filter:</h4>
+                    <ol>
+                        <li>The filter() method creates a new array filled with elements that pass a test provided by a
+                            function.
+                        </li>
+                        <li>The filter() method does not execute the function for empty elements.</li>
+                        <li>The filter() method does not change the original array.</li>
+
+                    </ol>
+                </div>
+                <div class="p-4 border-2 shadow-lg">
+                    <h4 class="text-xl font-semibold">forEach:</h4>
+                    <ol>
+                        <li>The forEach() method calls a function and iterates over the elements of an array.</li>
+                        <li>The forEach() array method loops through any array, executing a provided function once for
+                            each array element in
+                            ascending index order.</li>
+                        <li>This function is referred to as a callback function. Note: Arrays are collections of
+                            elements that can be of any
+                            datatype.</li>
+                    </ol>
+                </div>
+                <div class="p-4 border-2 shadow-lg">
+                    <h4 class="text-xl font-semibold">find:</h4>
+                    <ol>
+                        <li>The find() method returns the value of the first element that passes a test.</li>
+                        <li>The find() method executes a function for each array element.</li>
+                        <li>The find() method returns undefined if no elements are found.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="text-2xl my-2 text-purple-600 font-medium">What are the differences each other local storage,
+                session
+                storage, and cookies?</h3>
+            <div class="grid grid-rows-3 gap-5">
+                <div class="p-4 border-2 shadow-lg">
+                    <h5 class="text-lg text-rose-600 font-serif">localStorage:</h5>
+                    <p>localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web
+                        browser with no
+                        expiration date.
+                        This means the data stored in the browser will persist even after the browser window is closed.
+                    </p>
+                </div>
+                <div class="p-4 border-2 shadow-lg">
+                    <h5 class="text-lg text-rose-600 font-serif">Session storage:</h5>
+                    <p>Session storage allows you to store data in the browser depending on the system memory and the
+                        data stored in the
+                        browser until the browser is closed.
+                        In other words, closing the browser will clear all the data stored in session storage.</p>
+                </div>
+                <div class="p-4 border-2 shadow-lg">
+                    <h5 class="text-lg text-rose-600 font-serif">Cookies:</h5>
+                    <p>Cookies are small pieces of text sent to your browser by a website you visit.
+                        They help that website remember information about your visit, which can both make it easier to
+                        visit the site again and
+                        make the site more useful to you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl my-2 text-purple-600 font-medium">What is an event loop in javascript?</h3>
+            <div class="p-4 border-2 shadow-lg">
+                <h5 class="text-lg text-rose-600 font-serif">event loop:</h5>
+                <p>Event loop: An event loop is something that pulls stuff out of the queue and places it onto the
+                    function execution stack
+                    whenever the function stack becomes empty. <br>
+
+                    JavaScript has a runtime model based on an event loop, which is responsible for executing the code,
+                    collecting and
+                    processing events, and executing queued sub-tasks. This model is quite different from models in
+                    other languages like C
+                    and Java. <br>
+
+                    The event loop is the secret by which JavaScript gives us a delusion of being multithreaded even
+                    though it is
+                    single-threaded.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto my-4">
+        <h2 class="text-3xl">Function <span class="text-pink-800">Explanation</span> Section</h2>
+        <div class="grid md:grid-cols-2 gap-6 mt-4">
+            <div class="p-4 border-2 shadow-lg">
+                <h5 class="text-lg font-bold">Function Name: <span class="text-amber-400">quizTimer</span></h5>
+                <p>quizTime is an arrow function.
+                    It receives a parameter when it calls.
+                    If the parameter is true then stop the quiz Timer. <br>
+                    <span class="text-rose-400">OR</span> <br>
+                    count variable will increase one by one after every one thousand milliseconds.
+                    <br>
+                    countHtml variable assigned dom element with querySelector.
+                    <br>
+                    had to assign in 'covtMin' variable convert minutes of count variable.
+                    and also assign in 'mod' variable remainder of count variable.
+                    <br>
+                    <span class="text-rose-400">after that</span> <br>
+                    "min" assign after convert string of variable "covtMin" checking minutes or seconds with help of
+                    short hand if else
+                    condition.
+                    <br>
+                    if count value is greater then 60. then add a Tailwind CSS class in countHtml dom element
+                    line number 16 to 18 set innerHTML minutes and seconds.
+                </p>
+            </div>
+            <div class="p-4 border-2 shadow-lg">
+                <h5 class="text-lg font-bold">Function Name: <span class="text-amber-400">chooseQuiz</span></h5>
+                <p>chooseQuiz is an arrow function.
+                    It receives two parameters when it calls.
+                    one parameter is user selected answer and another parameter is the index. <br>
+                    <span class="text-rose-400">then</span> <br>
+                    find the question in line number 50 of noChange file. <br>
+                    match the user-given answer and correct answer then increase serial or push user give sheet in an
+                    array. <br>
+                    <span class="text-rose-400">in shortly says that</span>
+                    <br> in this function
+                    user-given question answer count and push in an empty array.
+                    and
+                    check user the given answer is correct or not
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
