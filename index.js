@@ -46,7 +46,7 @@ startQuiz.addEventListener("click", () => {
 // All quiz data fetched from json
 const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
-  const data = await res.json;
+  const data = await res.json(); // json is method so must a paranthsis. so it is resolved
   quizData = data;
   displayQuiz(data);
 };
@@ -57,7 +57,7 @@ const displayQuiz = (data) => {
     quizContainer.innerHTML = "";
     return;
   }
-
+console.log("___________", data)
   data.forEach((quiz, i) => {
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
